@@ -1,0 +1,343 @@
+/*日历组件*/
+.canlender{
+	background: #fff;
+	border:1px solid #0082c0;
+	display: none;
+	float: left;
+	height: 232px;
+	position: absolute;
+	width: 350px;
+	z-index: 10000000;
+}
+.canlender span::-moz-selection{background:transparent;} 
+.canlender span::selection {background:transparent;}
+.canlender .error{
+	background: #fff;
+	bottom: 0;
+	display: none;
+	height: 60px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 200px;
+	z-index: 10000010;
+}
+.canlender .errortxt{
+	background: #fff;
+	height: 30px;
+	text-align: center;
+	width: 200px;
+}
+.canlerder_header{
+	border-bottom: 1px solid #0082c0;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	width:100%
+}
+.canlerder_header_year,.canlerder_header_month{
+	background: #0082c0;
+	color: #fff;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	width:85px
+}
+.noclick,.canlerder_header_year_arrowdown,.canlerder_header_month_arrowleft,.canlerder_header_year_arrowleft,.canlerder_header_year_arrowright,.canlerder_header_month_arrowdown,.canlerder_header_month_arrowright{
+	background: #0082c0;
+	cursor: pointer;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	width:30px
+}
+.noclick{
+	display: none;
+}
+.canlerder_content{
+	background: #f9fbfc;
+	float: left;
+	height: 200px;
+	line-height: 30px;
+	width:100%
+}
+.canlerder_header_yearlist,.canlerder_header_monthlist{
+	border:1px solid #0082c0;
+	background: #fff;
+	display: none;
+	height: 140px;
+	left:30px;
+	top: 30px;
+	position: absolute;
+	width: 150px;
+	z-index: 10000001;
+}
+.canlerder_header_monthlist{
+	height: 120px;
+	left: 220px;
+}
+.canlerder_header_yearlistup,.canlerder_header_yearlistdown{
+	border-bottom: 1px solid #0082c0;
+	cursor: pointer;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 100%;
+}
+.canlerder_header_yearlistdown{
+	border-bottom: none;
+	border-top: 1px solid #0082c0;
+}
+.canlerder_header_yearlists{
+	float: left;
+	height: 100px;
+	width: 100%;
+}
+.canlerder_header_yearlists span{
+	cursor: pointer;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 50%;	
+}
+.canlerder_header_monthlist span{
+	cursor: pointer;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 50%;	
+}
+.noaction{
+	color: #ccc;
+}
+.yearselected,.monthselected,.hourselected,.minutesselected,.secondsselected,.dayselected{
+	background: #0082c0;
+	color: #fff;
+}
+.action:hover{
+	background: #CCCCCC;
+}
+.canlerder_content_week,.canlerder_content_day{
+	/*background: #009f95;*/
+	border-bottom: 1px solid #0082c0;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	width: 350px;
+}
+.canlerder_content_day{
+	border-bottom:none;
+	background: none;
+	height: 25px;
+	line-height: 25px;
+	height: 150px;
+}
+.canlerder_content_week span{
+	float: left;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 50px;
+}
+.canlerder_content_day span{
+	cursor: pointer;
+	float: left;
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	position: relative;
+	text-align: center;
+	width: 50px;
+}
+.chinacalendar{
+	border:1px solid #0082c0;
+	background: #fff;
+	color: #000;
+	cursor: pointer;
+	display: none;
+	font-size: 12px;
+	float: left;
+	height: 50px;
+	line-height: 25px;
+	position: absolute;
+	top: -50px;
+	width: 120px;
+}
+
+.canlerder_content_hmsandlist{
+	float: left;
+	border-top: 1px solid #0082c0;
+	height: 30px;
+	position: relative;
+	width: 100%;
+}
+.canlerder_content_hmsandlist_today,.canlerder_content_hmsandlist_sure,.canlerder_content_hmsandlist_cancel{
+	border-left: 1px solid #0082c0;
+	cursor: pointer;
+	float: right;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	width: 50px;
+}
+.canlerder_content_hmsandlist_timetxt,.canlerder_content_hmsandlist_othertxt{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	width:45px
+}
+.canlerder_content_hmsandlist_othertxt{
+	width: 5px;
+}
+.canlerder_content_hmsandlist_hourtxt,.canlerder_content_hmsandlist_minutestxt,.canlerder_content_hmsandlist_secondstxt{
+	cursor: pointer;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	width:30px
+}
+.canlerder_content_hour_list,.canlerder_content_minutes_list,.canlerder_content_seconds_list{
+	background: #fff;
+	border:1px solid #0082c0;
+	display: none;
+	float: left;
+	height:140px;
+	left: 45px;
+	position: absolute;
+	top: -140px;
+	width: 200px;
+}
+.canlerder_content_minutes_list{
+	left: 80px;
+}
+.canlerder_content_seconds_list{
+	left: 115px;
+}
+.canlerder_content_hour_list_title,.canlerder_content_minutes_list_title,.canlerder_content_seconds_list_title,.error_title{
+	background: #0082c0;
+	color: #fff;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 100%;
+}
+.canlerder_content_hour_list_title span{
+	cursor: pointer;
+	display: block;
+	float: right;
+	font-size: 20px;
+	height: 20px;
+	line-height: 20px;
+	width: 20px;
+}
+.canlerder_content_minutes_list_title span{
+	cursor: pointer;
+	display: block;
+	float: right;
+	font-size: 20px;
+	height: 20px;
+	line-height: 20px;
+	width: 20px;
+}
+.canlerder_content_seconds_list_title span{
+	cursor: pointer;
+	display: block;
+	float: right;
+	font-size: 20px;
+	height: 20px;
+	line-height: 20px;
+	width: 20px;
+}
+.canlerder_content_hour_lists,.canlerder_content_minutes_lists,.canlerder_content_seconds_lists{
+	float: left;
+	height: 120px;
+	width: 100%;
+}
+.canlerder_content_hour_lists span{
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 50px;
+}
+.canlerder_content_minutes_lists span{
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 20px;
+}
+.canlerder_content_seconds_lists span{
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 20px;
+}
+
+.arrowleft{
+	border-style: solid solid solid solid;
+	border-width: 5px 5px 5px 5px;
+	border-color: transparent #fff transparent transparent; 
+	content: "";
+	float: left;
+	height: 0;
+	margin: 10px 10px;
+	width: 0;
+}
+.arrowright{
+	border-style: solid solid solid solid;
+	border-width: 5px 5px 5px 5px;
+	border-color: transparent  transparent transparent #fff; 
+	content: "";
+	float: left;
+	height: 0;
+	margin: 10px 10px;
+	width: 0;
+}
+.arrowright90{
+	border-style: solid solid solid solid;
+	border-width: 5px 5px 5px 5px;
+	border-color: transparent  transparent transparent #fff; 
+	content: "1";
+	float: left;
+	height: 0;
+	margin: 13px 10px 0 10px;
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	transform: rotate(90deg);
+	width: 0;
+}
+.dateto {
+    color: #6c6c6c;
+    float: left;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 70px;
+}
+.canlendericon {
+    background: url(../images/global_icon_2.png) 8px -247px no-repeat;
+    cursor: pointer;
+    height: 23px;
+    float: left;
+    margin-top: 5px;
+    width: 33px;
+}

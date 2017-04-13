@@ -1,0 +1,121 @@
+/*弹窗公用样式*/
+.win{
+	background:rgba(0,0,0,0.1);
+	display: none;
+	float: left;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+}
+.win_content{
+	border:2px solid #979797;
+	background: #fff;
+	bottom: 0;
+	float: left;
+	height: 185px;
+	left: 0;
+/*	margin: 0 auto 0 auto;*/
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 287px;
+}
+.win .title{
+	background: #fbfbfb;
+	border-bottom: 1px solid #eaeceb;
+	cursor: default;
+	float: left;
+	height: 40px;
+	position: relative;
+	width: 100%;
+}
+.win .title .menuname::selection{
+	background: none;
+}
+.win .title .menuname{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 12px;
+	width: auto;
+}
+.win .title .filename{
+	color: #6c6c6c;
+	font-size: 13px;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	width: auto;
+}
+.win .close,.win .winclose{
+	background: url(../images/global_icon_2.1.png) 15px -150px no-repeat;
+	cursor: pointer;
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50px;
+}
+.win .input{
+	border:1px solid #dbdbdb;
+	color: #6c6c6c;
+	float: left;
+	height: 31px;
+	margin: 25px 0 34px 25px;
+	text-indent: 8px;
+	width: 237px;
+}
+.win .txt{
+	float: left;
+	padding: 15px;
+	width: auto;
+}
+.win .content{
+	float: left;
+}
+.win .btnline{
+	bottom: 18px;
+	float: left;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+.win .cancel,.win .save{
+	background: #bababa;
+	color: #fff;
+	cursor: pointer;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 45px;
+	text-align: center;
+	width: 85px;
+}
+.win .save{
+	background: #008DCF;
+	color: #fff;
+	margin-left: 25px;
+}
+.win .line{
+	float: left;
+	height: 33px;
+	margin-top: 20px;
+	width: 100%;
+}
+.win .line .text{
+	float: left;
+	height: 33px;
+	line-height: 33px;
+	margin-right: 20px;
+	padding: 0;
+	text-align: right;
+	width: 64px;
+}
+.winselect{
+	display: none;
+}
